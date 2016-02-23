@@ -2,11 +2,11 @@ package com.leetzilantonis.tntfill;
 
 import org.bukkit.entity.Player;
 
-public class RadiusFill {
+public class RadiusFillFactions {
 
 	Main plugin;
 
-	public RadiusFill(Main plugin){
+	public RadiusFillFactions(Main plugin){
 		this.plugin = plugin;
 	}
 
