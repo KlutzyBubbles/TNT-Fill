@@ -1,0 +1,41 @@
+####################################
+#                                  #
+#    TNT-Fill by Lee Tzilantonis   #
+#                                  #
+####################################
+
+# defaultRadius - the radius to be used when no radius is entered in the command.
+defaultRadius: 10
+
+# maxRadius - the maximum radius someone can use, this is pass able with the permission tntfill.bypass
+maxRadius: 50
+
+# maxDispenserSelect - the maximum amount of dispensers a player can select and fill
+maxDispenserSelect: 25
+
+# keepSelectingAfterLogout - after a player logs off should the plugin keep the player in selecting mode for later or disable their selecting mode (disabling helps reduce lag)
+keepSelectingAfterLogout: false
+
+# messageOnSelectedDispenserBreak - message the player if a dispenser they have broken was selected by another player (purely for looks, doesn't affect performance)
+messageOnSelectedDispenserBreak: true
+
+# helpBasedOnPerm - sends the help menu based on the users permissions, keep true if you like neat.
+helpBasedOnPerm: true
+
+# notifyOP - enable or disable the message sent to OP's when they join
+notifyOP: true
+
+# helpSuffix - enable or disable the help suffix (Advertising space or whatever you want)
+helpSuffix: true
+
+# breakInCreative - enable or disable breaking of blocks when in selecting mode and in creative
+breakInCreative: false
+
+# updateCheck - enable or disable checking for updates, updates are checked for when the server starts or reloads
+updateCheck: true
+
+# sendUpdates - enable or disable sending of update checks to OP's and players with the permission: tntfill.sendupdate
+sendUpdates: true
+
+# notifyCreativeSelect - enable or disable notifying of create players when they select a dispenser instead of breaking it
+notifyCreativeSelect: true

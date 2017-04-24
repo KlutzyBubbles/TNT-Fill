@@ -1,0 +1,114 @@
+name: TNTFill
+version: 2.0.11
+description: Fill dispensers with TNT in many shapes and forms
+author: Lee Tzilantonis
+main: com.leetzilantonis.tntfill.Main
+database: false
+softdepend: [Factions, MassiveCore, FactionsUUID]
+commands:
+  tntfill:
+    description: Fill dispensers around you.
+    aliases: [fillaround, loadtnt, tf]
+    permission: tntfill.command
+    usage: Something went wrong, contact staff immediately
+  tntclear:
+    description: Clear dispensers around you.
+    aliases: [cleararound, emptytnt, tc]
+    permission: tntclear.command
+    usage: Unknown command. Type "/help" for help.
+permissions:
+  tntfill.*:
+    description: Gives access to all /tntfill commands
+    children:
+      tntfill.use: true
+      tntfill.use.customradius: true
+      tntfill.count: true
+      tntfill.count.customradius: true
+      tntfill.auto: true
+      tntfill.auto.customradius: true
+      tntfill.reload: true
+      tntfill.select: true
+      tntfill.select.undo: true
+      tntfill.select.list: true
+      tntfill.select.clear: true
+      tntfill.fill: true
+      tntfill.fill.auto: true
+      tntfill.command: true
+      tntfill.sendupdate: true
+      tntfill.debug: true
+  tntfill.select.*:
+    description: Gives access to all /tntfill select commands
+    children:
+      tntfill.select: true
+      tntfill.select.undo: true
+      tntfill.select.list: true
+      tntfill.select.clear: true
+  tntfill.user.*:
+    description: Gives access to all TNT-Fill commands that are related to user use
+    children:
+      tntfill.use: true
+      tntfill.use.customradius: true
+      tntfill.count: true
+      tntfill.count.customradius: true
+      tntfill.auto: true
+      tntfill.auto.customradius: true
+      tntfill.select: true
+      tntfill.select.undo: true
+      tntfill.select.list: true
+      tntfill.select.clear: true
+      tntfill.fill: true
+      tntfill.fill.auto: true
+  tntfill.debug:
+    description: Allows the player to see debug messages in chat
+    default: op
+  tntfill.sendupdate:
+    description: Allows the player to see update messages when the server is enabled
+    default: op
+  tntfill.command:
+    description: Allows you to access the /tntfill command
+    default: true
+  tntfill.use:
+    description: Allows you to use /tntfill <#>
+    default: true
+  tntfill.use.customradius:
+    description: Allows you to use /tntfill <#> <RADIUS>
+    default: op
+  tntfill.count:
+    description: Allows you to use /tntfill count
+    default: op
+  tntfill.count.customradius:
+    description: Allows you to use /tntfill count <RADIUS>
+    default: op
+  tntfill.auto:
+    description: Allows you to use /tntfill auto
+    default: op
+  tntfill.auto.customradius:
+    description: Allows you to use /tntfill auto <RADIUS>
+    default: op
+  tntfill.reload:
+    description: Allows you to use /tntfill reload
+    default: op
+  tntfill.select:
+    description: Allows you to use /tntfill select
+    default: op
+  tntfill.select.undo:
+    description: Allows you to use /tntfill select undo
+    default: op
+  tntfill.select.list:
+    description: Allows you to use /tntfill select list
+    default: op
+  tntfill.select.clear:
+    description: Allows you to use /tntfill select clear
+    default: op
+  tntfill.fill:
+    description: Allows you to use /tntfill fill <#>
+    default: op
+  tntfill.fill.auto:
+    description: Allows you to use /tntfill fill auto
+    default: op
+  tntfill.removeselection:
+    description: Allows you to have your selection cleared when you leave
+    default: op
+  tntfill.debug:
+    description: Allows you to see debug messages in-game
+    default: op
